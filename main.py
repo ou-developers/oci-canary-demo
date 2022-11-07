@@ -9,6 +9,6 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    version="0.2"
+    version="0.1"
     namespace = os.getenv('POD_NAMESPACE', default = 'ns-red')
     return {"Message": "You are experimenting DevOps deployment strategies in OCI", "Version":version,"Namespace":namespace}

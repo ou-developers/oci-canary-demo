@@ -61,7 +61,7 @@ spec:
   # tls:
   # - secretName: tls-secret
   rules:
-  - host: <userID>host.com
+  - host: <userID>canaryhost.com
   #for example, - host: user22host.com
     http:
       paths:

@@ -16,7 +16,7 @@ spec:
         - name: sample-canary-app
           # enter the path to your image, be sure to include the correct region prefix
           image: <region-key>.ocir.io/<tenancy-namespace>/<repo-name>:<tag>
-          #for example, image: iad.ocir.io/oracletenacy/iad-dop-lab16-1-ocir-1/oci_sample_webapp_user22:${BUILDRUN_HASH}
+          #for example, image: iad.ocir.io/oracletenacy/iad-dop-lab17-1-ocir-1/oci_sample_webapp_user22:${BUILDRUN_HASH}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -62,7 +62,7 @@ spec:
   # - secretName: tls-secret
   rules:
   - host: <userID>canaryhost.com
-  #for example, - host: user22host.com
+  #for example, - host: user22canaryhost.com
     http:
       paths:
         - path: /
